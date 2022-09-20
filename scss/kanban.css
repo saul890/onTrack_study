@@ -1,0 +1,22 @@
+@import 'layout';
+@import 'typography';
+@import 'navbar';
+
+#whenEmpty{
+    position: absolute;
+    top: 5%;
+    margin-left: 1%;
+    max-width: 60%;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    color: #969696;
+}
+
+@media (max-width: 1170px){
+    #whenEmpty{
+    position: relative;
+    margin-left: 4%;
+    margin-bottom: 10%;
+    max-width: 70%;
+    }
+}

@@ -1,0 +1,198 @@
+@import 'navbar';
+@import 'layout';
+
+main{
+  margin-top: -200px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h3{
+  margin: 15px 0;
+  font-weight: 900;
+  font-size: 28px;
+  text-align: center;
+}
+
+input{
+  transition:  0.5s ease-in-out;
+  margin: 15px 0;
+  font-size: 18px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.11);
+  border: none;
+}
+
+.btn-group{
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  height: 10%;
+  margin-left: 16px;
+}
+
+button{
+  margin: 11px;
+  padding: 30px;
+  border: none;
+  font-size: 18px;
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+}
+
+form{
+  position: relative;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  border: 5px solid #034EFC;
+  padding: 58px;
+  border-radius: 10px;
+  color: #034EFC;
+  margin-left: 30px;
+}
+
+form button{
+  background: rgb(255, 25, 140);
+  width: 100%;
+  margin: 5px 0;
+  color: white;
+}
+
+.start{
+  border: 5px solid #33c733;
+  color: #33c733;
+  background: white;
+  border-radius: 10px;
+}
+
+.start:hover{
+  color: white;
+  background: #33c733;
+  cursor: pointer;
+}
+
+.break{
+  background: rgb(10, 252, 83);
+  color: white;
+  border-radius: 10px;
+}
+
+.reset{
+  border: 5px solid rgb(255, 51, 51);
+  color: rgb(255, 51, 51);
+  background: white;
+  border-radius: 10px;
+}
+
+.reset:hover{
+  color: white;
+  background: rgb(255, 51, 51);
+  cursor: pointer;
+}
+
+
+
+.pause{
+  border: 5px solid rgb(253, 143, 17); 
+  background: white;
+  color: rgb(253, 143, 17);
+  border-radius: 10px;
+}
+
+.pause:hover{
+  background:  rgb(253, 143, 17);
+  color: white;
+  cursor: pointer;
+}
+
+.resume{
+  background:  rgb(253, 143, 17);
+  color: white;
+}
+
+.wrap{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+
+.wrap_intervals{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  width: 100%;
+  font-family: 'Roboto';
+}
+
+.set{
+  display: flex;
+  gap: 50px;
+  width: 30%;
+  font-family: 'Roboto';
+  font-size: 20px;
+  align-items: baseline;
+}
+
+.clock{
+  padding: 3px;
+  display: flex;
+  position: relative;
+  color: #034EFC;
+  font-size: 100px;
+  margin-bottom: 50px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+
+#sets{
+  font-weight: 100px;
+}
+
+
+.form_button{
+  margin-top: 100px;
+}
+
+h2{
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.range-slider.grad {
+    --progress-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2) inset;
+    --progress-flll-shadow: var(--progress-shadow);
+    --fill-color: linear-gradient(to right, LightCyan, var(--primary-color));
+    --thumb-shadow: 0 0 4px rgba(0, 0, 0, 0.3),
+      -3px 9px 9px rgba(255, 255, 255, 0.33) inset,
+      -1px 3px 2px rgba(255, 255, 255, 0.33) inset,
+      0 0 0 99px var(--primary-color) inset;
+  
+  }
+  .range-slider.grad input:hover{
+    --thumb-transform: scale(1.2);
+  }
+  .range-slider.grad input:active{
+    --thumb-shadow: inherit;
+    --thumb-transform: scale(1);
+  }
+
+.slider{
+  -webkit-appearance: none;
+  border: 2px solid #034EFC;
+  background-color: white;
+  box-shadow: 1px 1px 1px #6f9aff;
+  border-radius: 10px;
+  height: 10px;
+  width: 100%;
+}
+
+.slider::-webkit-slider-thumb{
+  border-radius: 100px;
+  box-shadow: 1px 2px 5px #6f9aff;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Task List</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href = "icons/aim.svg">
+
+  <link rel="stylesheet" href="scss/navbar.css">
+
+  <link rel="stylesheet" href="scss/layout.css">
+  <link rel="stylesheet" href="scss/typography.css">
+  <link rel="stylesheet" href="scss/tasklist.css">
+  <link rel="stylesheet" href="scss/taskform.css">
+
+
+
+  <link rel="stylesheet" href="scss/music.css">
+  <link rel="stylesheet" href="scss/logo.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="grid-container">
+    <img src="icons/aim_ontrack.svg" id="logo">
+    <nav class="nav">
+      <div id="navbar">
+        <div id="navContent">
+          <a href = "index.html"><img class="navIcon" src="icons/tasksblue.svg"><h4 id="selected">Task list</h4></a>
+          <a href = "kanban.html"><img class="navIcon" src="icons/kanbanblack.svg"><h4>Kanban Board</h4></a>
+          <a href = "stopwatch.html"><img class="navIcon" src="icons/stopwatchblack.svg"><h4>Stopwatch</h4></a>
+          <a href = "pomodoro.html"><img class="navIcon" src="icons/pomoblack.svg"><h4>Pomodoro Timer</h4></a>
+          <a href = "dictionary.html"><img class="navIcon" src="icons/dictionaryblack.svg"><h4>Dictionary</h4></a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header"></header>
+
+    <main class="main">
+      <form id="taskform">
+          
+        <!-- Name input -->
+        <label for="task" >Task:</label>
+        <input class="field" type="text" name="task" id="taskInput" placeholder="Enter task here." required>
+        <br>
+
+        <!-- Date input -->
+        <label for="dueDate">Due Date: </label>
+        <input class="field" type="date" name="dueDate" id="dueDateInput" required>
+        <br>
+        <!-- Time input -->
+        <label for="estimatedTime" >Estimated completion time:</label>
+        <input class="field" type="number" name="estimatedTime" id="estimatedTimeInput" placeholder="Completion time in minutes" required>
+        <br>
+
+        <!-- Priority -->
+        <label for="priority">Task Priority:</label>
+        <select class="field" name="prority" id="priorityInput" required>
+          <option value="">Select one </option>
+          <option value="!">Low</option>
+          <option value="!!">Medium</option>
+          <option value="!!!">High</option>
+        </select>
+        <br>
+
+        <!-- Submit -->
+        <button id="submit-button" type="submit">Add Task</button>
+
+      </form>
+
+      <div id="alltasks">
+        <!-- Empty state -->
+        <h3 id="whenEmpty">You do not have any tasks added.</h3>
+
+        <!-- Tasks will appear in this list -->
+        <ul id="tasklist"></ul>
+      </div>
+
+      <iframe id="music_player" src="https://open.spotify.com/embed/playlist/471N195f5jAVs086lzYglw?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </main>
+  </div>
+</body>
+<script src = "script.js" type="module"></script>
+
+</html>
+

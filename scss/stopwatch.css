@@ -1,0 +1,74 @@
+@import 'navbar';
+@import 'layout';
+
+.screen{
+    width: 870px;
+    display: flex;
+    justify-content: center;
+    font-size: 200px;
+    color: #034EFC;
+    font-family: 'Roboto';
+}
+
+.buttons{
+  display: flex;
+  width: 870px;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 50px;
+}
+
+
+#border{
+  position: relative;
+  outline: 10px solid #034EFC;
+  border-radius: 5px;
+  width: 870px;
+  height: 230px;
+}
+
+.stopwatchControls{
+  width: 70px;
+}
+
+.stopwatchControls:hover{
+  cursor: pointer;
+}
+
+#start:hover{
+  cursor: pointer;
+}
+
+
+@media (max-width: 1170px){
+.screen{
+  width: 620px;
+  display: flex;
+  justify-content: center;
+  font-size: 140px;
+  color: #034EFC;
+  font-family: 'Roboto';
+}
+
+.buttons{
+display: flex;
+width: 620px;
+justify-content: center;
+margin-top: 80px;
+gap: 40px;
+}
+
+.stopwatchControls{
+  width: 60px;
+}
+
+
+#border{
+position: relative;
+outline: 10px solid #034EFC;
+border-radius: 5px;
+width: 620px;
+height: 160px;
+}
+
+}

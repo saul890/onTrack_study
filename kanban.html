@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kanban Board</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href = "icons/aim.svg">
+  <link rel="stylesheet" href="scss/kanban.css">
+  <link rel="stylesheet" href="scss/music.css">
+  <link rel="stylesheet" href="scss/logo.css">
+  <link rel="stylesheet" href="scss/layout.css">
+  <link rel="stylesheet" href="scss/typography.css">
+  <link rel="stylesheet" href="scss/navbar.css">
+
+
+  <link rel="stylesheet" href="jkanban/jkanban.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="grid-container">
+    <img src="icons/aim_ontrack.svg" id="logo">
+    <nav class="nav">
+      <div id="navbar">
+        <div id="navContent">
+          <a href = "index.html"><img class="navIcon" src="icons/tasksblack.svg"><h4>Task list</h4></a>
+          <a href = "kanban.html"><img class="navIcon" src="icons/kanbanblue.svg"><h4 id="selected">Kanban Board</h4></a>
+          <a href = "stopwatch.html"><img class="navIcon" src="icons/stopwatchblack.svg"><h4>Stopwatch</h4></a>
+          <a href = "pomodoro.html"><img class="navIcon" src="icons/pomoblack.svg"><h4>Pomodoro Timer</h4></a>
+          <a href = "dictionary.html"><img class="navIcon" src="icons/dictionaryblack.svg"><h4>Dictionary</h4></a>
+        </div>
+      </div>
+    </nav>
+    
+    <header class="header"></header>
+
+    <main class="main">
+      <div id="kanban_container">
+        <h3 id="whenEmpty">Add tasks to your task list to see them appear in your Kanban board.</h3>
+      </div>
+      <button class="btn btn-success" id="addDefault">Add board</button>
+      <button class="btn btn-danger" id="removeButton">Remove last board</button>
+      <iframe id="music_player" src="https://open.spotify.com/embed/playlist/471N195f5jAVs086lzYglw?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </main>
+  </div>
+<script src="mainkanban.js" type="module"></script>
+
+</body>
+
+</html>
+

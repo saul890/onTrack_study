@@ -1,0 +1,86 @@
+@import 'layout';
+@import 'typography';
+@import 'navbar';
+
+#word-search-label{
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: 130px;
+}
+
+form{
+    top: 200px;
+    display: flex;
+    position: absolute;
+}
+
+.dictionary-input {
+    font-family: 'Raleway', sans-serif;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    color: #4d4d4d;
+    display: block;
+    padding: 8px;
+    width: 400px;
+    box-sizing: border-box;
+    transition: border-color .25s linear;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 2px;
+    height: 40px;
+}
+
+#submitWord{
+    width: 100px;
+    height: 40px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    background-color: #034EFC;
+    color: white;
+    font-weight: bold;
+}
+
+#searchResult{
+    margin-top: 10%;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card{
+    margin-top: 90px;
+    max-width: 60%;
+}
+
+.theWord{
+    font-family: 'Roboto';
+    font-size: 70px;
+    margin-top: 100px;
+}
+
+.theDefinition{
+    font-family: 'Roboto';
+    font-weight: lighter;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.theSynonyms{
+    line-height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #909090;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+
+
+@media (max-width: 1170px){
+    .theWord{
+        margin-top: 200px;
+    }
+  }

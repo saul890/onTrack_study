@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pomodoro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href = "icons/aim.svg">
+  <link rel="stylesheet" href="scss/pomodoro.css">
+  <link rel="stylesheet" href="scss/layout.css">
+  <link rel="stylesheet" href="scss/navbar.css">
+  <link rel="stylesheet" href="scss/music.css">
+  <link rel="stylesheet" href="scss/logo.css">
+  <link rel="stylesheet" href="scss/typography.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+    <img src="icons/aim_ontrack.svg" id="logo">
+    <nav class="nav">
+      <div id="navbar">
+        <div id="navContent">
+          <a href = "index.html"><img class="navIcon" src="icons/tasksblack.svg"><h4>Task list</h4></a>
+          <a href = "kanban.html"><img class="navIcon" src="icons/kanbanblack.svg"><h4>Kanban Board</h4></a>
+          <a href = "stopwatch.html"><img class="navIcon" src="icons/stopwatchblack.svg"><h4>Stopwatch</h4></a>
+          <a href = "pomodoro.html"><img class="navIcon" src="icons/pomoblue.svg"><h4 id="selected">Pomodoro Timer</h4></a>
+          <a href = "dictionary.html"><img class="navIcon" src="icons/dictionaryblack.svg"><h4>Dictionary</h4></a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+
+      <div class="form_button">
+        <form action = ".">
+          <div class = "clock">
+            <div class="mins">00</div>
+            <div>:</div>
+            <div class="secs">00</div>
+            <audio src="#"></audio>
+          </div>
+
+          <div class="whole_wrap">
+            <div class="wrap">
+              <h2>Focus time</h2> <p id="focusValue">25</p>
+            </div>
+            <input type="range" min="15" max="60" value="25" class="slider" id="focusTime" oninput = "onFocusInput(this)">
+          </div>
+
+          <div class="whole_wrap">
+            <div class="wrap">
+              <h2>Break time</h2> <p id="breakValue">5</p>
+            </div>
+            <input type="range" min="1" max="30" value="5" class="slider" id="breakTime" oninput = "onBreakInput(this)">
+          </div>
+
+          <div class="whole_wrap">
+            <div class="wrap">
+              <h2>Rest</h2><p id="restValue">15</p>
+            </div>
+            <input type="range" min="10" max="45" value="15" class="slider" id="restTime" oninput = "onRestInput(this)">
+          </div>
+
+          <div class="wrap_intervals">
+            <div class="set">
+              <h2 class="ints">Session</h2>
+              <p id="sets">0</p>
+            </div>
+
+            <div class="set">
+              <h2 class="ints">Cycle</h2>
+              <p id="games">0</p>
+            </div>
+          </div>
+
+        </form>
+
+        <div class="btn-group">
+          <button class="start">Start Focus</button>
+          <button class="pause">Pause</button>
+          <button class="reset">Reset</button>
+        </div>
+
+      </div>
+    </main>
+  </div>
+  <script src="pomodorojs/settings.js"></script>
+  <script src="pomodorojs/timer.js"></script>
+  <iframe id="music_player" src="https://open.spotify.com/embed/playlist/471N195f5jAVs086lzYglw?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</body>
+</html>

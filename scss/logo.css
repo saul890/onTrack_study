@@ -1,0 +1,7 @@
+#logo{
+    position: fixed;
+    width: 10%;
+    top: 5%;
+    left: 2%;
+    z-index: 1000;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stopwatch</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href = "icons/aim.svg">
+  <link rel="stylesheet" href="scss/layout.css">
+  <link rel="stylesheet" href="scss/typography.css">
+  <link rel="stylesheet" href="scss/navbar.css">
+  <link rel="stylesheet" href="scss/tasklist.css">
+  <link rel="stylesheet" href="scss/taskform.css">
+  <link rel="stylesheet" href="scss/music.css">
+  <link rel="stylesheet" href="scss/logo.css">
+  <link rel="stylesheet" href="scss/stopwatch.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="grid-container">
+    <img src="icons/aim_ontrack.svg" id="logo">
+    <nav class="nav">
+      <div id="navbar">
+        <div id="navContent">
+        <a href = "index.html"><img class="navIcon" src="icons/tasksblack.svg"><h4>Task list</h4></a>
+        <a href = "kanban.html"><img class="navIcon" src="icons/kanbanblack.svg"><h4>Kanban Board</h4></a>
+        <a href = "stopwatch.html"><img class="navIcon" src="icons/stopwatchblue.svg"><h4 id="selected">Stopwatch</h4></a>
+        <a href = "pomodoro.html"><img class="navIcon" src="icons/pomoblack.svg"><h4>Pomodoro Timer</h4></a>
+        <a href = "dictionary.html"><img class="navIcon" src="icons/dictionaryblack.svg"><h4>Dictionary</h4></a>
+      </div>
+      </div>
+    </nav>
+    <header class="header"></header>
+    
+    <main class="main">
+      
+        <div id="border">
+          <h1 class="screen">
+            <span id="hours">
+              00
+            </span>:<span id="minutes">
+              00
+            </span>:<span id="seconds">
+              00
+            </span>
+          </h1>
+        </div>
+
+        <div class="buttons">
+          <img class="stopwatchControls" id="start" src="icons/play_stopwatcg.svg">
+          <img class="stopwatchControls" id="stop" src="icons/pause_stopwatg.svg">
+          <img class="stopwatchControls" id="reset" src="icons/reset_control.svg">
+        </div>
+        <iframe id="music_player" src="https://open.spotify.com/embed/playlist/471N195f5jAVs086lzYglw?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </main>
+  </div>
+</body>
+</html>
+
+<script  src="stopwatch.js" type="module"></script>

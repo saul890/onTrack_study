@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dictionary</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" href = "icons/aim.svg">
+  <link rel="stylesheet" href="scss/dictionary.css">
+  <link rel="stylesheet" href="scss/layout.css">
+  <link rel="stylesheet" href="scss/typography.css">
+  <link rel="stylesheet" href="scss/navbar.css">
+  <link rel="stylesheet" href="scss/music.css">
+  <link rel="stylesheet" href="scss/logo.css">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="grid-container">
+    <img src="icons/aim_ontrack.svg" id="logo">
+      <nav class="nav">
+        <div id="navbar">
+          <div id="navContent">
+            <a href = "index.html"><img class="navIcon" src="icons/tasksblack.svg"><h4>Task list</h4></a>
+            <a href = "kanban.html"><img class="navIcon" src="icons/kanbanblack.svg"><h4>Kanban Board</h4></a>
+            <a href = "stopwatch.html"><img class="navIcon" src="icons/stopwatchblack.svg"><h4>Stopwatch</h4></a>
+            <a href = "pomodoro.html"><img class="navIcon" src="icons/pomoblack.svg"><h4>Pomodoro Timer</h4></a>
+            <a href = "dictionary.html"><img class="navIcon" src="icons/dictionaryblue.svg"><h4 id="selected">Dictionary</h4></a>
+          </div>
+        </div>
+      </nav>
+    <header class="header"></header>
+    
+    <main class="main">
+      <div>
+        <label id="word-search-label">Word Search</label>
+        <!-- Search bar -->
+        <form id="searchForm" autocomplete="off">
+          <input class="dictionary-input" id="searchWord" type="search" name="searchBox" placeholder="Enter a word">
+          <input id="submitWord" type="button" name="submit" value="Search">
+        </form>
+      </div>
+
+      <div class="searchResult" id="searchResult"> 
+        <!-- Results from dictionary API will appear here -->
+      </div>
+      <iframe id="music_player" src="https://open.spotify.com/embed/playlist/471N195f5jAVs086lzYglw?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </main>
+  </div>
+  <script src = "dictionary.js"></script>
+</body>
+
+</html>

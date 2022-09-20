@@ -1,0 +1,51 @@
+@import 'typography';
+
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    }
+    
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background: #F6F8FA;
+    line-height: 100px;
+    z-index: 500;
+  }
+
+#selected{
+font-weight: bold;
+font-family: 'Raleway', sans-serif;
+color: #034EFC;
+}
+
+
+.navIcon{
+  width: 20px;
+  margin-left: 15%;
+}
+
+#navContent{
+  margin-top: 120px;
+}
+
+@media (max-width: 1170px){
+  h4{
+    display: none;
+  }
+  .navIcon{
+    width: 30px;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    margin-left: 35%;
+  }
+  #navBar{
+    width: 5%;
+  }
+}
