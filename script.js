@@ -87,19 +87,17 @@ function addTask(title, dueDate, estimatedTime, priorityRating, checked) {
 
 // when there are elements in the local storage, get them by index number
 for (var i = 0; i <= localStorage.length - 1; i++) {
-    key = localStorage.key(i);
+    let key = localStorage.key(i);
     getFromLocalStorage(key)
 }
 
 // Render tasks from local storage
 function getFromLocalStorage(taskId) {
-    task = JSON.parse(window.localStorage.getItem(taskId));
-      renderTask(task);
+    let task = JSON.parse(window.localStorage.getItem(taskId));
+    renderTask(task);
   }
 
-function onlyGetFromLocalStorage(taskId) {
-    task = JSON.parse(window.localStorage.getItem(taskId));
-  }
+
 
 // Function to display the item on the page
 function renderTask(task) {

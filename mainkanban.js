@@ -1,5 +1,3 @@
-import '../public/jkanban/jkanban.min.js'
-
 
 
 // Empty array of task titles
